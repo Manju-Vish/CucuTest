@@ -1,5 +1,11 @@
-
 Feature: Application acct
+
+Background:
+Given setup the entries in database
+When launch the browser from config variables
+And hit the home page url of banking site
+
+@Regressiontest
 Scenario: Search experience for product in both home and offers page
 
 Given User is on landing  page
@@ -13,3 +19,5 @@ Examples:
 | Habib |  
 | Prgathi |
 | Anil |
+
+
